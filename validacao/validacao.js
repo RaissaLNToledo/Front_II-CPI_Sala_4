@@ -26,6 +26,7 @@ form.addEventListener('submit',(Event) => {
     vdescricao();
 })
 
+
 function setError(index){
     campos[index].style.border ='2px solid red';
     spans[index].style.display = 'block';
