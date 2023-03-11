@@ -16,24 +16,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <title>Document</title>
 </head>
 <body>
+
     <section>
-        <form id="Formulario">
+        <form id="formulario">
             <h1>Criação de Personagem</h1><br>
-            <label for="titulo"></label>
-            <input type="text" id="titulo" name="titulo" placeholder="Titulo">
-            
-            <label for="url"></label>
-            <input type="url" id="url" name="url" placeholder="URL">
-    
-            <label for="descrição"></label>
-            <textarea id="descrição" name="descrição" placeholder="Descrição"></textarea><br><br>
-    
-            <input type="submit" value="Cadastrar">
+
+                <label for="titulo"></label>
+                <input type="text" id="titulo" name="titulo" class="inputs required" placeholder="Titulo" required oninput="vtitulo()" onchange="toggleButton()">
+                <span class="requerimento">Por favor, preencha corretamente o campo titulo</span>
+                
+                <label for="_url"></label>
+                <input type="text" id="_url" name="_url" class="inputs required" placeholder="URL"required oninput="v_url()" onchange="toggleButton()"><br>
+                <span class="requerimento">Por favor, preencha corretamente o campo url</span>
+
+                <label for="descricao"></label>
+                <textarea id="descrição" name="descrição" cols =" 30 " rows =" 10 " class="inputs required" placeholder="Descrição" required oninput="vdescricao()" onchange="toggleButton()"></textarea><br><br>
+                <span class="requerimento">Por favor, preencha corretamente o campo descrição</span>
+        
+                <button id="cadastrar" disabled onclick="redi()" type="submit">Cadastrar</button>
+
         </form>
     </section>
-	<script src="script.js"></script>
+
+	<script src="./validacao/validacao.js"></script>
+    <script type="text/javascript" src="./validacao/back.js"></script>
 </body>
 </html>
+

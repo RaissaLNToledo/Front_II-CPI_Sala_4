@@ -7,12 +7,7 @@
   --color-purple2: indigo;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+*
 body {
   font-family: "Outfit";
   background-color: var(--color-dark1);
@@ -37,10 +32,19 @@ section {
 #url {
   margin-bottom: 1rem;
   text-align: center;
+
 }
 form {
   display: flex;
   flex-direction: column;
+}
+
+
+.requerimento{
+    display: none;
+    font-size: .9rem;
+    margin: 3px 0 0 1px;
+    color: var(--color-red);
 }
 
 input {
@@ -53,6 +57,7 @@ input {
   width: 100%;
   box-sizing: border-box;
   transition: 0.3s;
+
 }
 
 input:focus {
