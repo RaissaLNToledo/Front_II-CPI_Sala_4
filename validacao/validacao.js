@@ -2,28 +2,11 @@ const form = document.getElementById('formulario');
 const campos =document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.requerimento');
 
-function toggleButton(){
-    const titulo = document.getElementsByTagName('input')[0].value;
-    const v_url = document.getElementsByTagName('input')[1].value;
-    const vdescricao = document.getElementsByTagName('textarea')[2].value;
-    
-
-    if (titulo &&  v_url && vdescricao  ) {
-        document.querySelector('#cadastrar').disabled = false;
-        return
-
-    }
-    document.querySelector('#cadastrar').disabled = true;
-}
-
-
-
-
-form.addEventListener('submit',(Event) => {
+form.addEventListener('click',(Event) => {
     Event.preventDefault();
-    vtitulo();
-    v_url();
-    vdescricao();
+    titulo();
+    url();
+    descricao()
 })
 
 
@@ -37,7 +20,7 @@ function removeError(index){
     spans[index].style.display = 'none';
 }
 
-function vtitulo(){
+function titulo(){
     if(campos[0].value.length < 3)
     {
         setError(0);
@@ -50,7 +33,7 @@ function vtitulo(){
 
 
 
-function v_url(){
+function url(){
     if(campos[1].value.length < 6)
     {
         setError(1);
@@ -64,7 +47,7 @@ function v_url(){
 
 
 
-function vdescricao(){
+function descricao(){
     if(campos[2].value.length < 8 )
     {
         setError(2);

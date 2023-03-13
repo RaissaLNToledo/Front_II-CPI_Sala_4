@@ -27,24 +27,22 @@
             <h1>Criação de Personagem</h1><br>
 
                 <label for="titulo"></label>
-                <input type="text" id="titulo" name="titulo" class="inputs required" placeholder="Titulo" required oninput="vtitulo()" onchange="toggleButton()">
+                <input type="text" id="titulo" name="titulo" class="inputs required" placeholder="Titulo" required >
                 <span class="requerimento">Por favor, preencha corretamente o campo titulo</span>
                 
                 <label for="_url"></label>
-                <input type="text" id="_url" name="_url" class="inputs required" placeholder="URL"required oninput="v_url()" onchange="toggleButton()"><br>
+                <input type="text" id="url" name="_url" class="inputs required" placeholder="URL"required ><br>
                 <span class="requerimento">Por favor, preencha corretamente o campo url</span>
 
                 <label for="descricao"></label>
-                <textarea id="descrição" name="descrição" cols =" 30 " rows =" 10 " class="inputs required" placeholder="Descrição" required oninput="vdescricao()" onchange="toggleButton()"></textarea><br><br>
+                <textarea id="descricao" name="descricao" cols =" 30 " rows =" 10 " class="inputs required" placeholder="Descrição" required ></textarea><br><br>
                 <span class="requerimento">Por favor, preencha corretamente o campo descrição</span>
         
-                <button id="cadastrar" disabled onclick="redi()" type="submit">Cadastrar</button>
+                <button id="cadastrar" type="submit">Cadastrar</button>
 
         </form>
     </section>
 
 	<script src="./validacao/validacao.js"></script>
-    <script type="text/javascript" src="./validacao/redi.js"></script>
 </body>
 </html>
-
