@@ -3,7 +3,7 @@ const campos =document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.requerimento');
 
 form.addEventListener('click',(Event) => {
-    Event.preventDefault()
+    Event.preventDefault();
     titulo();
     url();
     descricao()
@@ -16,9 +16,14 @@ function setError(index){
 }
 
 function removeError(index){
+<<<<<<< HEAD:validacao/validacao.js
     campos[index].style.border ='2px solid green';
     spans[index].style.display = 'none';
     
+=======
+    campos[index].style.border ='';
+    spans[index].style.display = 'none';
+>>>>>>> refs/remotes/origin/main:scripts/validacao.js
 }
 
 function titulo(){
@@ -42,7 +47,6 @@ function url(){
     else
     {
         removeError(1);
-        
     }
 }
 
