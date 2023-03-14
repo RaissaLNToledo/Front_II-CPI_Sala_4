@@ -3,7 +3,7 @@ const campos =document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.requerimento');
 
 form.addEventListener('click',(Event) => {
-    //Event.preventDefault();
+    Event.preventDefault();
     titulo();
     url();
     descricao()
