@@ -20,6 +20,6 @@ function capturaDados() {
 
 let listaObjetos = [];
 let btnSalvar = document.getElementById("cadastrar");
-btnSalvar.addEventListener("click", function (evento) {
+btnSalvar.addEventListener("click", function() {
     listaObjetos.push(capturaDados());
 });

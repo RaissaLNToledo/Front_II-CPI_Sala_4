@@ -17,7 +17,7 @@ body {
   align-items: center;
 }
 
-section {
+#sectionFormulario {
   background-color: var(--color-dark2);
   padding: 2rem;
   border-radius: 0.9rem;
@@ -101,7 +101,7 @@ textarea {
     gap: 5px;
   }
 
-  section {
+  #sectionFormulario {
     background-color: var(--color-dardk2);
     padding: 2rem;
     border-radius: 10px;
@@ -112,3 +112,5 @@ textarea {
 ::placeholder{
     text-align: left;
 }
+
+/*Cards*/
