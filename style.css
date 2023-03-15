@@ -7,8 +7,7 @@
   --color-purple2: indigo;
 }
 
-*
-body {
+* body {
   font-family: "Outfit";
   background-color: var(--color-dark1);
   color: var(--color-white);
@@ -32,19 +31,17 @@ body {
 #url {
   margin-bottom: 1rem;
   text-align: center;
-
 }
 form {
   display: flex;
   flex-direction: column;
 }
 
-
-.requerimento{
-    display: none;
-    font-size: .9rem;
-    margin: 3px 0 0 1px;
-    color: var(--color-red);
+.requerimento {
+  display: none;
+  font-size: 0.9rem;
+  margin: 3px 0 0 1px;
+  color: var(--color-red);
 }
 
 input {
@@ -57,7 +54,6 @@ input {
   width: 100%;
   box-sizing: border-box;
   transition: 0.3s;
-
 }
 
 input:focus {
@@ -97,9 +93,9 @@ textarea {
 /*Cards*/
 #paiCards {
   display: grid;
-  grid-template-columns: 3fr 3fr 3fr;
+  grid-template-columns: 2fr 2fr 2fr;
   justify-content: center;
-  gap: 1rem
+  gap: 1rem;
 }
 
 .card {
@@ -131,8 +127,19 @@ textarea {
     min-width: 10%;
     overflow: auto;
   }
-} 
-::placeholder{
-    text-align: left;
+  #paiCards {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
+::placeholder {
+  text-align: left;
+}
+
+@media screen and (max-width: 620px) {
+  #paiCards {
+    display: flex;
+    flex-direction: column;
+  }
+}
