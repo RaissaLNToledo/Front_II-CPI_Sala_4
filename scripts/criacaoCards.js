@@ -25,5 +25,4 @@ let elementoPai = document.getElementById("paiCards");
 btnSalvar.addEventListener("click", function(){
     criarCards(listaObjetos, elementoPai);
     document.getElementById("formulario").reset()
-    console.log(listaObjetos);
 })

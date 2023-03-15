@@ -4,7 +4,8 @@
   --color-dark1: #181818;
   --color-dark2: #1e1e1e;
   --color-purple1: #9333ff;
-  --color-purple2: indigo;
+  --color-purple2: #4b0082;
+  --color-grey: #808080;
 }
 
 * body {
@@ -39,8 +40,8 @@ form {
 
 .requerimento {
   display: none;
-  font-size: 0.9rem;
-  margin: 3px 0 0 1px;
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
   color: var(--color-red);
 }
 
@@ -73,20 +74,20 @@ textarea {
   resize: none;
 }
 
-[type="submit"] {
+#cadastrar {
   padding: 1rem;
   font-size: 1rem;
   outline: none;
   border: none;
   border-radius: 5px;
   margin-top: 1rem;
-  background-color: var(--color-purple2);
-  color: var(--color-white);
+  background-color: var(--color-dark1);
+  color: var(--color-grey);
   font-weight: bold;
-  cursor: pointer;
   transition: 0.3s;
 }
-[type="submit"]:hover {
+
+#botaoAtivo:hover {
   background-color: var(--color-purple1);
 }
 
