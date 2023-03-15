@@ -16,8 +16,9 @@ function setError(index){
 }
 
 function removeError(index){
-    campos[index].style.border ='';
+    campos[index].style.border ='2px solid green';
     spans[index].style.display = 'none';
+    
 }
 
 function titulo(){
