@@ -105,16 +105,21 @@ textarea {
   margin-bottom: 10px;
   border-radius: 13px;
   text-align: center;
+  display: block;
+  justify-self: center;
   padding: 10px 20px;
 }
 
-.card img {
-  width: 100%;
-  height: auto;
+.imagem {
   border-radius: 5px;
+  overflow: hidden;
 }
 
-@media screen and (max-width: 320px) {
+.imagem img {
+  max-width: 100%;
+}
+
+@media screen and (max-width: 420px) {
   from {
     display: flex;
     flex-direction: column;
@@ -122,7 +127,7 @@ textarea {
   }
 
   #sectionFormulario {
-    background-color: var(--color-dardk2);
+    background-color: var(--color-dark2);
     padding: 2rem;
     border-radius: 10px;
     min-width: 10%;
@@ -131,6 +136,13 @@ textarea {
   #paiCards {
     display: flex;
     flex-direction: column;
+  }
+
+  .imagem {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
   }
 }
 
