@@ -124,7 +124,7 @@ footer {
   background-color: var(--color-dark2);
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer a img {
   padding: 3px;
