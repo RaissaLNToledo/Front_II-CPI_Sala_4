@@ -24,5 +24,12 @@ let elementoPai = document.getElementById("paiCards");
 
 btnSalvar.addEventListener("click", function(){
     criarCards(listaObjetos, elementoPai);
-    document.getElementById("formulario").reset()
+    document.getElementById("formulario").reset();
+    botao.setAttribute("disabled", "");
+    botao.style.backgroundColor = "#1e1e1e";
+    botao.style.background = "#181818";
+    botao.style.cursor = "auto";
+    campos[0].style.border = 'none';
+    campos[1].style.border = 'none';
+    campos[2].style.border = 'none';
 })
